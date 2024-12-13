@@ -1,6 +1,12 @@
 version: "1.0"
-linter: jetbrains/qodana-jvm:2024.2
-profile:
-  name: qodana.recommended
+linter:
+  profile: default
+  cache: ./qodana-cache
+  failThreshold: 1
 include:
   - "src/**"
+exclude:
+  - "out/**"
+  - "*.iml"
+  - ".DS_Store"
+  - "*.pdf"
