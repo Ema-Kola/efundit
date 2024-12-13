@@ -4,5 +4,4 @@ profile:
   name: qodana.recommended
 include:
   - name: CheckDependencyLicenses
-include:
   - "src/**"
